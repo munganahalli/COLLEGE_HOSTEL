@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="dashboard-container">
+    <header>
+      <h1>📰 Admin Blog Dashboard</h1>
+      <div class="header-buttons">
+        <button id="themeToggle" onclick="toggleTheme()">🌙</button>
+        <button id="logoutBtn" onclick="logout()">Logout</button>
+      </div>
+    </header>
+
+    <section class="blog-form">
+      <h2>Create a New Blog Post</h2>
+      <input type="text" id="title" placeholder="Blog Title" />
+      <textarea id="content" placeholder="Write your blog content..."></textarea>
+      <input type="file" id="imageUpload" accept="image/*" />
+      <button onclick="addPost()">Publish</button>
+    </section>
+
+    <section class="blog-list">
+      <h2>Your Blog Posts</h2>
+      <div id="posts"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+<body>
+  <div class="dashboard-container">
+    <header>
+      <h1>📰 Admin Blog Dashboard</h1>
+      <button id="logoutBtn" onclick="logout()">Logout</button>
+    </header>
+
+    <section class="blog-form">
+      <h2>Create a New Blog Post</h2>
+      <input type="text" id="title" placeholder="Blog Title" />
+      <textarea id="content" placeholder="Write your blog content..."></textarea>
+      <button onclick="addPost()">Publish</button>
+    </section>
+
+    <section class="blog-list">
+      <h2>Your Blog Posts</h2>
+      <div id="posts"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

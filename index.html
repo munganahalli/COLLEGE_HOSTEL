@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Login & Register</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-box">
+      <div class="tab-buttons">
+        <button id="loginTab" class="active" onclick="showLogin()">Login</button>
+        <button id="registerTab" onclick="showRegister()">Register</button>
+      </div>
+
+      <!-- Login Form -->
+      <div id="loginForm" class="form">
+        <h2>Admin Login</h2>
+        <div class="input-group">
+          <input type="text" id="loginUsername" required />
+          <label>Username</label>
+        </div>
+        <div class="input-group">
+          <input type="password" id="loginPassword" required />
+          <label>Password</label>
+        </div>
+        <button onclick="login()">Login</button>
+        <p id="loginError"></p>
+      </div>
+
+      <!-- Register Form -->
+      <div id="registerForm" class="form hidden">
+        <h2>Create New Account</h2>
+        <div class="input-group">
+          <input type="text" id="registerUsername" required />
+          <label>New Username</label>
+        </div>
+        <div class="input-group">
+          <input type="password" id="registerPassword" required />
+          <label>New Password</label>
+        </div>
+        <button onclick="register()">Register</button>
+        <p id="registerError"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
